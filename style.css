@@ -1,0 +1,256 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+  line-height: 1.5;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+/* Paleta */
+:root {
+  --verde-limao: #bfff00;
+  --roxo-medio: #9d4edd;
+  --branco: #ffffff;
+  --cinza-escuro: #1f1f1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--roxo-medio);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--branco);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--verde-limao);
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, var(--roxo-medio), var(--cinza-escuro));
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--verde-limao);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--branco);
+}
+
+.botao-whatsapp {
+  background-color: var(--verde-limao);
+  color: var(--cinza-escuro);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.botao-whatsapp:hover {
+  background-color: #ccff33;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.sobre {
+  background-color: var(--branco);
+  color: var(--cinza-escuro);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.conteudo-sobre {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  color: var(--roxo-medio);
+  margin-bottom: 1.5rem;
+}
+
+.sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.agendamento {
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.conteudo-sobre,
+.conteudo-agendamento {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.agendamento h2 {
+  font-size: 2rem;
+  color: var(--verde-limao);
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--roxo-medio);
+  color: var(--branco);
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #b38bff;
+}
+
+#mensagem-status {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--verde-limao);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .botao-whatsapp {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .conteudo-sobre,
+  .conteudo-agendamento {
+    padding: 0 1rem;
+  }
+
+  .agendamento form input,
+  .agendamento form textarea {
+    font-size: 1rem;
+  }
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Estilo do botão */
+form button {
+  background-color: #8a2be2; /* roxo médio */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #6a1bbf;
+}
+
+/* Estilo especial para o <select> no Chrome, Firefox, etc */
+form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20fill%3D'%23999'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M7%2010l5%205%205-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: center;
+}
