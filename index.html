@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aulas de Reforço</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">Reforço+</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Agendar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Facilitando o aprendizado em Matemática e Física</h1>
+      <p>Aulas personalizadas, no seu ritmo e com foco no que você mais precisa.</p>
+      <a href="https://wa.me/5521985411567?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20de%20reforço." target="_blank" class="botao-whatsapp">
+        Agendar no WhatsApp
+    </a>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+  <div class="conteudo-sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Meu nome é Maria Eduarda e sou apaixonada por ensinar Matemática e Física de um jeito leve e prático.
+      Trabalho com aulas de reforço personalizadas, voltadas para alunos do ensino fundamental e médio.
+    </p>
+    <p>
+      O objetivo é fazer você entender de verdade — sem decoreba, sem pressão — no seu ritmo! 
+    </p>
+  </div>
+</section>
+
+<section class="agendamento" id="agendar">
+  <div class="conteudo-agendamento">
+    <h2>Agende sua Aula</h2>
+<form id="form-agendamento">
+  <input type="text" name="nome" placeholder="Seu nome" required />
+  <input type="email" name="email" placeholder="Seu email" required />
+  
+  <select name="materia" required>
+    <option value="" disabled selected>Escolha a matéria</option>
+    <option value="Matemática">Matemática</option>
+    <option value="Física">Física</option>
+  </select>
+  
+  <input type="datetime-local" name="data" required />
+  <textarea name="mensagem" rows="4" placeholder="Algo que queira me contar?"></textarea>
+  <button type="submit">Enviar Agendamento</button>
+</form>
+
+    <p id="mensagem-status"></p>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Reforço+ | Todos os direitos reservados</p>
+  </footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
